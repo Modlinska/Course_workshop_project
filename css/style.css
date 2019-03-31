@@ -161,31 +161,33 @@ nav a {
 .information h2, .information p {
     margin-bottom: 50px;
 }
-.information p{
 
-}
-.about-chairs{
+.information p {}
+
+.about-chairs {
     height: 350px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding-top: 30px;
 }
-.type-of-chair{
+
+.type-of-chair {
     height: 230px;
     width: 330px;
     position: relative;
     font-size: 15px;
 }
-.chair-information{
+
+.chair-information {
     height: 250px;
     width: 360px;
     border: 1px solid lightgrey;
     padding: 30px 0 0 20px;
     box-sizing: border-box;
-
 }
-.name-of-chair{
+
+.name-of-chair {
     height: 60px;
     width: 330px;
     background-color: rgba(255, 255, 255, .7);
@@ -195,17 +197,98 @@ nav a {
     padding: 20px 0 30px 15px;
     box-sizing: border-box;
 }
-.short-underline{
+
+.short-underline {
     height: 6px;
     width: 140px;
     background-color: #24ba9f;
     margin-bottom: 15px;
 }
-.chair-information p:nth-of-type(2){
+
+.chair-information p:nth-of-type(2) {
     margin-top: 30px;
 }
-.price-list{
+
+.price-list {
     width: 100%;
     height: 730px;
     background-color: #f1f1f1;
+}
+.title-of-countainer h3{
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+.long-underline {
+    height: 6px;
+    width: 315px;
+    background-color: #24ba9f;
+    margin-bottom: 75px;
+}
+.price-card-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price-card{
+height: 500px;
+width: 330px;
+border:2px solid #d5d5d5;
+background-color: #f9f9f9;
+box-sizing: border-box;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.price-card:nth-child(even){
+    border-color: #24ba9f;
+    background-color: #24ba9f;
+}
+.price-card:nth-child(odd):before{
+    content:"";
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border:15px solid white;
+    background-color: #c2c2c2;
+    box-sizing: border-box;
+    display: inline-block;
+    box-shadow: 0 0 2px 1px #c2c2c2;
+    position: absolute;
+    top: -30px;
+    right: calc(50% - 25px);
+}
+.price-card:nth-child(even):before{
+    content:"";
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border:15px solid #24ba9f;
+    background-color: white;
+    box-sizing: border-box;
+    display: inline-block;
+    /* box-shadow: 0 0 2px 1px #24ba9f; */
+    position: absolute;
+    top: -30px;
+    right: calc(50% - 25px);
+}
+.grey{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #24ba9f;
+}
+.white{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+.circle-with-price{
+    width: 130px;
+    height: 130px;
+    border: 1px solid #d2d2d2;
+    border-radius: 50%;
+    box-sizing: border-box;
 }
