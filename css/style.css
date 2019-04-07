@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header {
@@ -64,14 +65,16 @@ nav a {
     position: absolute;
     right: -20px;
     top: 38px;
+    display: flex;
+    align-items: center;
     display: none;
 }
 
-.lidropdown a:hover+.dropdown {
+/* .lidropdown a:hover+.dropdown {
     display: block;
     display: flex;
     align-items: center;
-}
+} */
 
 .lidropdown li {
     margin: 5px;
@@ -376,4 +379,79 @@ sup {
 .white-button{
     color:#24ba9f;
     background-color: white;
+}
+.message form{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+}
+.message input, textarea{
+    width: 600px;
+    height: 65px;
+    border: 1px solid #24ba9f;
+    margin: 15px 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.message textarea{
+    height: 190px;
+}
+.message{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+::placeholder{
+    font-size: 25px;
+    color: #d2d2d2;
+    margin-left: 10px;
+}
+.data-processing input{
+    height: 40px;
+    width: 40px;
+    border-color: #24ba9f;
+}
+.data-processing form{
+    width: 350px;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.data-processing label{
+    width:280px;
+    color: #d2d2d2;
+    font-size: 22px;
+}
+.data-processing button{
+    height: 60px;
+    width: 350px;
+    background-color: #24ba9f;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: white;
+    margin-top:30px;
+    border:none;
+
+}
+.data-processing{
+    box-sizing: border-box;
+}
+.data-processing img{
+    margin-bottom:5px;
+}
+footer p{
+    color: #a5a5a5;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 30px;
 }
