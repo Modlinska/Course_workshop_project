@@ -7,11 +7,11 @@
 header {
     width: 100%;
     background-color: black;
-    height: 40px;
+    height: 50px;
 }
 
 .header {
-    height: 40px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,7 +23,7 @@ header {
 }
 
 .logo {
-    font-size: 15px;
+    font-size: 1rem;
     text-transform: uppercase;
     color: white;
 }
@@ -37,7 +37,7 @@ a {
     text-decoration: none;
     color: white;
     padding: 10px;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 a:hover {
@@ -64,8 +64,8 @@ nav a {
     background-color: black;
     position: absolute;
     right: -20px;
-    top: 38px;
-    display: flex;
+    top: 45px;
+    /*display: flex;*/
     align-items: center;
     display: none;
 }
@@ -336,7 +336,7 @@ sup {
 
 .grey-lightgrey, .grey-white {
     display: flex;
-    justify-content: cener;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -412,6 +412,7 @@ sup {
     height: 40px;
     width: 40px;
     border-color: #24ba9f;
+    display: none;
 }
 .data-processing form{
     width: 350px;
@@ -423,7 +424,26 @@ sup {
     width:280px;
     color: #d2d2d2;
     font-size: 22px;
+    position: relative;
 }
+/*Tworzymy befora z nowym wygladem checkboxa , na razie przesuniete tło + transision na zmianę pozycji tła*/
+.data-processing label::before{
+    content: '';
+    width: 40px;
+    height: 40px;
+    border: 1px solid #24ba9f;
+    background: url("../images/form_ok.jpg") no-repeat;
+    background-position:-50px;
+    position: absolute;
+    left: -47px;
+    bottom: 9px;
+    transition: background-position .2s ;
+}
+/* Kiedy zanznaczamy checkboxa ( label) działa transition i podmienia tło na nasz znaczek */
+input[type="checkbox"]:checked + label::before {
+    background-position: center;
+}
+
 .data-processing button{
     height: 60px;
     width: 350px;
@@ -437,8 +457,8 @@ sup {
     color: white;
     margin-top:30px;
     border:none;
-
 }
+
 .data-processing{
     box-sizing: border-box;
 }
@@ -454,4 +474,13 @@ footer p{
     justify-content: space-between;
     flex-direction: row;
     padding-top: 30px;
+}
+.logos{
+    margin-right: 70px;
+}
+.footer-right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
 }
