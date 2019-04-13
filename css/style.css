@@ -40,9 +40,9 @@ a {
     font-size: 1rem;
 }
 
-a:hover {
-    font-weight: bold;
-}
+/*a:hover {*/
+/*    font-weight: bold;*/
+/*}*/
 
 nav a {
     text-transform: uppercase;
@@ -63,32 +63,38 @@ nav a {
     width: 110px;
     background-color: black;
     position: absolute;
-    right: -20px;
+    right: -10px;
     top: 45px;
     /*display: flex;*/
     align-items: center;
     display: none;
+
 }
 
-/* .lidropdown a:hover+.dropdown {
-    display: block;
-    display: flex;
-    align-items: center;
-} */
+
+/*.lidropdown a:hover+.dropdown{*/
+
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
 
 .lidropdown li {
     margin: 5px;
 }
+.visible{
+    display: flex;
+    align-items: center;
+}
 
 .triangle {
-    width: 0;
-    height: 0;
+    width: 0px;
+    height:0px;
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     border-bottom: 12px solid black;
     position: absolute;
     top: -12px;
-    right: 61px;
+    right: 48px;
 }
 
 .galery {
@@ -164,8 +170,6 @@ nav a {
 .information h2, .information p {
     margin-bottom: 50px;
 }
-
-.information p {}
 
 .about-chairs {
     height: 350px;
