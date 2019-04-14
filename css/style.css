@@ -267,9 +267,24 @@ a {
     box-sizing: border-box;
     position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
+}
+
+.price-card-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-card-down {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
 }
 
 .price-card:nth-child(even) {
@@ -310,12 +325,15 @@ a {
     font-size: 20px;
     text-transform: uppercase;
     color: #24ba9f;
+    margin-bottom: 20px;
+
 }
 
 .white {
     font-size: 20px;
     text-transform: uppercase;
     color: white;
+    margin-bottom: 20px;
 }
 
 .circle-with-price {
