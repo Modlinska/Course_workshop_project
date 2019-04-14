@@ -2,6 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'ralewayregular';
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular.woff2') format('woff2'),
+    url('../fonts/raleway-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold.woff2') format('woff2'),
+    url('../fonts/raleway-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('../fonts/raleway-light.woff2') format('woff2'),
+    url('../fonts/raleway-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 header {
@@ -19,7 +44,7 @@ header {
 
 .coutainer {
     max-width: 1055px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .logo {
@@ -38,13 +63,6 @@ a {
     color: white;
     padding: 10px;
     font-size: 1rem;
-}
-
-/*a:hover {*/
-/*    font-weight: bold;*/
-/*}*/
-
-nav a {
     text-transform: uppercase;
 }
 
@@ -55,7 +73,6 @@ nav a {
 
 .lidropdown {
     position: relative;
-    /* border: 1px solid red; */
 }
 
 .dropdown {
@@ -65,30 +82,22 @@ nav a {
     position: absolute;
     right: -10px;
     top: 45px;
-    /*display: flex;*/
     align-items: center;
     display: none;
-
 }
-
-
-/*.lidropdown a:hover+.dropdown{*/
-
-/*    display: flex;*/
-/*    align-items: center;*/
-/*}*/
 
 .lidropdown li {
     margin: 5px;
 }
-.visible{
+
+.visible {
     display: flex;
     align-items: center;
 }
 
 .triangle {
-    width: 0px;
-    height:0px;
+    width: 0;
+    height: 0;
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     border-bottom: 12px solid black;
@@ -102,7 +111,7 @@ nav a {
     min-height: 500px;
     background: rgba(209, 209, 209, 1);
     background: -moz-linear-gradient(top, rgba(209, 209, 209, 1) 0%, rgba(254, 254, 254, 1) 0%, rgba(219, 219, 219, 1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(209, 209, 209, 1)), color-stop(0%, rgba(254, 254, 254, 1)), color-stop(100%, rgba(219, 219, 219, 1)));
+    /*background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(209, 209, 209, 1)), color-stop(0%, rgba(254, 254, 254, 1)), color-stop(100%, rgba(219, 219, 219, 1)));*/
     background: -webkit-linear-gradient(top, rgba(209, 209, 209, 1) 0%, rgba(254, 254, 254, 1) 0%, rgba(219, 219, 219, 1) 100%);
     background: -o-linear-gradient(top, rgba(209, 209, 209, 1) 0%, rgba(254, 254, 254, 1) 0%, rgba(219, 219, 219, 1) 100%);
     background: -ms-linear-gradient(top, rgba(209, 209, 209, 1) 0%, rgba(254, 254, 254, 1) 0%, rgba(219, 219, 219, 1) 100%);
@@ -113,20 +122,19 @@ nav a {
 .image {
     width: 400px;
     height: 350px;
-    /* border: 1px solid red; */
 }
 
 .information {
-    /* padding-top: 50px; */
     width: 400px;
     height: 350px;
-    /* border:1px solid red; */
     box-sizing: border-box;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    line-height: 1.5em;
+    font-weight: bold;
 }
 
 .zipper a {
@@ -165,6 +173,7 @@ nav a {
 .information h2 {
     text-transform: uppercase;
     font-size: 30px;
+    font-weight: bold;
 }
 
 .information h2, .information p {
@@ -190,7 +199,7 @@ nav a {
     height: 250px;
     width: 360px;
     border: 1px solid lightgrey;
-    padding: 30px 0 0 20px;
+    padding: 20px 0 0 20px;
     box-sizing: border-box;
 }
 
@@ -214,6 +223,13 @@ nav a {
 
 .chair-information p:nth-of-type(2) {
     margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.chair-information p:nth-of-type(1) {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .price-list {
@@ -285,7 +301,6 @@ nav a {
     background-color: white;
     box-sizing: border-box;
     display: inline-block;
-    /* box-shadow: 0 0 2px 1px #24ba9f; */
     position: absolute;
     top: -30px;
     right: calc(50% - 25px);
@@ -369,7 +384,8 @@ sup {
 .grey-white p:nth-child(even) {
     background-color: #f1f1f1;
 }
-.button-small{
+
+.button-small {
     height: 30px;
     width: 120px;
     background-color: #24ba9f;
@@ -380,18 +396,21 @@ sup {
     align-items: center;
     text-transform: uppercase;
 }
-.white-button{
-    color:#24ba9f;
+
+.white-button {
+    color: #24ba9f;
     background-color: white;
 }
-.message form{
-    display:flex;
+
+.message form {
+    display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
 
 }
-.message input, textarea{
+
+.message input, textarea {
     width: 600px;
     height: 65px;
     border: 1px solid #24ba9f;
@@ -399,56 +418,64 @@ sup {
     padding: 10px;
     box-sizing: border-box;
 }
-.message textarea{
+
+.message textarea {
     height: 190px;
 }
-.message{
+
+.message {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-::placeholder{
+
+::placeholder {
     font-size: 25px;
     color: #d2d2d2;
     margin-left: 10px;
 }
-.data-processing input{
+
+.data-processing input {
     height: 40px;
     width: 40px;
     border-color: #24ba9f;
     display: none;
 }
-.data-processing form{
+
+.data-processing form {
     width: 350px;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
-.data-processing label{
-    width:280px;
+
+.data-processing label {
+    width: 350px;
     color: #d2d2d2;
     font-size: 22px;
     position: relative;
 }
+
 /*Tworzymy befora z nowym wygladem checkboxa , na razie przesuniete tło + transision na zmianę pozycji tła*/
-.data-processing label::before{
+.data-processing label::before {
     content: '';
     width: 40px;
     height: 40px;
     border: 1px solid #24ba9f;
     background: url("../images/form_ok.jpg") no-repeat;
-    background-position:-50px;
+    background-position: -50px;
     position: absolute;
     left: -47px;
     bottom: 9px;
-    transition: background-position .2s ;
+    transition: background-position .2s;
 }
+
 /* Kiedy zanznaczamy checkboxa ( label) działa transition i podmienia tło na nasz znaczek */
 input[type="checkbox"]:checked + label::before {
     background-position: center;
 }
 
-.data-processing button{
+.data-processing button {
     height: 60px;
     width: 350px;
     background-color: #24ba9f;
@@ -459,30 +486,39 @@ input[type="checkbox"]:checked + label::before {
     text-transform: uppercase;
     font-size: 25px;
     color: white;
-    margin-top:30px;
-    border:none;
+    margin-top: 44px;
+    border: none;
 }
 
-.data-processing{
+.data-processing {
     box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
-.data-processing img{
-    margin-bottom:5px;
+
+.data-processing img {
+    margin-bottom: 5px;
+    align-self: baseline;
 }
-footer p{
+
+footer p {
     color: #a5a5a5;
 }
-.footer{
+
+.footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
     padding-top: 30px;
 }
-.logos{
+
+.logos {
     margin-right: 70px;
 }
-.footer-right{
+
+.footer-right {
     display: flex;
     align-items: center;
     justify-content: flex-end;
