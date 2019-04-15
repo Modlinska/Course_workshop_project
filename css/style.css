@@ -53,8 +53,9 @@ header {
     text-transform: uppercase;
     color: white;
 }
-.logo-color{
-    color:#24ba9f;
+
+.logo-color {
+    color: #24ba9f;
 }
 
 ul li {
@@ -72,7 +73,10 @@ a {
 
 .dropdown a {
     text-transform: none;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
+    display: inline-block;
+    padding: 2px;
+    font-size: 0.8rem;
 }
 
 .lidropdown {
@@ -87,16 +91,14 @@ a {
     right: -10px;
     top: 45px;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
     display: none;
-}
-
-.lidropdown li {
-    margin: 5px;
 }
 
 .visible {
     display: flex;
-    align-items: center;
+
 }
 
 .triangle {
@@ -126,6 +128,17 @@ a {
 .image {
     width: 400px;
     height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    display: none;
+}
+
+.image .visible {
+    display: inline-block;
 }
 
 .information {
