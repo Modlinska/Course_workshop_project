@@ -1,7 +1,9 @@
 # Course_workshop_project
-A project created during coding bootcamp
+A project created during coding bootcamp.
+It's only deskopt view, whithout RWD.
+I am using html, css and JS. 
 
-There is submenu in navigation. It's appears after click.
 
-The checkbox is personalized with css transition
+
+
 
