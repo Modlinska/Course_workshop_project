@@ -338,7 +338,7 @@ a {
     right: calc(50% - 25px);
 }
 
-.grey {
+.odd-plan {
     font-size: 20px;
     text-transform: uppercase;
     color: #24ba9f;
@@ -346,7 +346,7 @@ a {
 
 }
 
-.white {
+.even_plan {
     font-size: 20px;
     text-transform: uppercase;
     color: white;
@@ -388,14 +388,14 @@ sup {
     font-size: 15px;
 }
 
-.grey-lightgrey, .grey-white {
+.odd_elements, .even_elements {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.grey-white p, .grey-lightgrey p {
+.even_elements p, .odd_elements p {
     height: 40px;
     width: 326px;
     line-height: 40px;
@@ -404,19 +404,19 @@ sup {
     color: #6e6e6e;
 }
 
-.grey-lightgrey p {
+.odd_elements p {
     background-color: #e4e4e4;
 }
 
-.grey-lightgrey p:nth-child(even) {
+.odd_elements p:nth-child(even) {
     background-color: #f1f1f1;
 }
 
-.grey-white {
+.even_elements {
     background-color: white;
 }
 
-.grey-white p:nth-child(even) {
+.even_elements p:nth-child(even) {
     background-color: #f1f1f1;
 }
 
@@ -432,7 +432,7 @@ sup {
     text-transform: uppercase;
 }
 
-.white-button {
+.even-button {
     color: #24ba9f;
     background-color: white;
 }
